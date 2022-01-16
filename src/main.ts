@@ -9,9 +9,9 @@ async function bootstrap() {
   const port = process.env.PORT || 3000;
 
   const config = new DocumentBuilder()
-    .setTitle('TEST API')
-    .setDescription('TEST 개발을 위한 API 문서입니다.')
-    .setVersion('1.0')
+    .setTitle('SLACK API')
+    .setDescription('SLACK 개발을 위한 API 문서입니다.')
+    .setVersion('1.1')
     .addCookieAuth('connect.sid')
     .build();
     
