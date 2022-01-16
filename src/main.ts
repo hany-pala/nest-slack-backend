@@ -14,16 +14,16 @@ async function bootstrap() {
     .setVersion('1.1')
     .addCookieAuth('connect.sid')
     .build();
-    
+
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
-  
+
   if (module.hot) {
     module.hot.accept();
     module.hot.dispose(() => app.close());
   }
-  
+
   await app.listen(port);
-  console.log(`listening on port ${port}`)
+  console.log(`listening on port ${port}`);
 }
 bootstrap();

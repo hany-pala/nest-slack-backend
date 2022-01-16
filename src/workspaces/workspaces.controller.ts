@@ -3,33 +3,20 @@ import { Controller, Get, Post, Delete } from '@nestjs/common';
 @Controller('api/workspaces')
 export class WorkspacesController {
   @Get()
-  getMyWorkspaces() {
-    
-  }
-  
+  getMyWorkspaces() {}
+
   @Post()
-  createWorkspace() {
-    
-  }
-  
+  createWorkspace() {}
+
   @Get(':url/members')
-  getAllMembersFromWorkspace() {
-    
-  }
-  
+  getAllMembersFromWorkspace() {}
+
   @Post(':url/members/:id')
-  inviteMembersToWorksapce() {
-    
-  }
-  
+  inviteMembersToWorksapce() {}
+
   @Delete(':url/members/:id')
-  kickMemberFromWorkspace() {
-  
-  }
-  
+  kickMemberFromWorkspace() {}
+
   @Get(':url/members/:id')
-  getMemberInfoInWorkspace() {
-  }
-  
-  
+  getMemberInfoInWorkspace() {}
 }

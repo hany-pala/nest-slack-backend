@@ -5,14 +5,13 @@ export class UserDto extends JoinRequestDto {
   @ApiProperty({
     required: true,
     example: 1,
-    description: '아이디'
+    description: '아이디',
   })
   @ApiProperty({
     required: true,
     example: 'inspiration33@kakao.com',
-    description: '이메일'
+    description: '이메일',
   })
-  
   id: number;
   email: string;
 }

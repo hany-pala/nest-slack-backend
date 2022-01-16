@@ -2,40 +2,27 @@ import { Controller, Get, Query, Param, Post, Body } from '@nestjs/common';
 
 @Controller('api/wokrspaces/:url/channels')
 export class ChannelsController {
-  
   @Get()
-  getChannels() {
-    
-  }
-  
+  getChannels() {}
+
   @Post()
-  createChannels() {
-    
-  }
-  
+  createChannels() {}
+
   @Get(':name')
-  getSpecificChannel() {
-    
-  }
-  
+  getSpecificChannel() {}
+
   @Get(':name/members')
-  getAllMembers() {
-    
-  }
-  
+  getAllMembers() {}
+
   @Post(':name/members')
-  inviteMembers() {
-    
-  }
-  
+  inviteMembers() {}
+
   @Get(':name/chats')
   getChat(@Query('perPage') perPage, @Query('page') page, @Param() param) {
     console.log(param.id, param.url);
     console.log(perPage, page);
   }
-  
+
   @Post(':id/chats')
-  postChat(@Body() body) {
-    
-  }
+  postChat(@Body() body) {}
 }
